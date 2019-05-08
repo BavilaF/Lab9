@@ -1,0 +1,7 @@
+framework:
+    router:
+        strict_requirements: ~
+        utf8: true
+
+    fos_user:
+      resource: "@FOSUserBundle/Resources/config/routing/all.xml"

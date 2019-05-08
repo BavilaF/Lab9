@@ -1,0 +1,7 @@
+fos_user:
+  db_driver: ORM
+  user_class: App\Entity\User
+  firewall_name: main
+  from_email:
+    address: "info@smartlist.com"
+    sender_name: "Your refrigerator"

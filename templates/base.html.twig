@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>{% block title %}Welcome!{% endblock %}</title>
+        {% block stylesheets %}
+          <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        {% endblock  %}
+    </head>
+    <body>
+      <div class="container">
+        {% block body %}
+          <div>
+            I am an html element from base.html.twig
+          </div>
+        {% endblock %}
+      </div>
+        {% block javascripts %}{% endblock %}
+    </body>
+</html>

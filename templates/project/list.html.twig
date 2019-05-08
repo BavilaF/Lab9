@@ -1,0 +1,18 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Listing All Produce Items{% endblock %}
+
+{% block body %}
+
+<ul>
+
+{% for produceItem in produceItems %}
+
+  <li> {{produceItem.name}} {{produceItem.expiration_date}} {{produceItem.icon}}
+  </li>
+  
+{% endfor %}
+
+</ul>
+
+{% endblock %}
